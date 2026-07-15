@@ -1,0 +1,8 @@
+#ifndef MODPACK_KEPORI
+#define MODPACK_KEPORI
+// BEGIN INCLUDE
+#include "_kepori.dm"
+#include "datum/species.dm"
+#include "datum/species_bodytypes.dm"
+// END INCLUDE
+#endif
