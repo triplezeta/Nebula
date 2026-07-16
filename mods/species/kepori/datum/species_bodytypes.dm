@@ -3,5 +3,84 @@
 	bodytype_category    = BODYTYPE_KEPORI
 	icon_base            = 'mods/species/kepori/icons/body.dmi'
 	icon_template        = 'mods/species/kepori/icons/template.dmi'
+	//blood_overlays       = 'mods/species/kepori/icons/blood.dmi'
+	//skeletal_icon        = 'mods/species/kepori/icons/skeleton.dmi'
+	eye_icon             = 'mods/species/kepori/icons/eyes.dmi' //todo: figure out how to add multiple eye sprite options
 	pixel_offset_x       = -8
 	antaghud_offset_x    = 8
+	limb_blend           = ICON_MULTIPLY
+	//bodytype_flag        = BODY_EQUIP_FLAG_KEPORI
+
+	appearance_flags     = HAS_SKIN_COLOR | HAS_EYE_COLOR
+	base_color           = "#eeeeee"
+	base_eye_color       = "#d0600a"
+
+	nail_noun            = "talons"
+
+	default_sprite_accessories = list(
+		SAC_MARKINGS = list(
+			/decl/sprite_accessory/marking/kepori                 = list(SAM_COLOR = COLOR_WHITE),
+			/decl/sprite_accessory/marking/kepori/feet = list(SAM_COLOR = COLOR_WHITE),
+			/decl/sprite_accessory/marking/kepori/claws           = list(SAM_COLOR = COLOR_WHITE)
+		)
+	)
+
+	//cold_level_1  = 260 //Default 260 - Lower is better
+	//cold_level_2  = 200 //Default 200
+	//cold_level_3  = 120 //Default 120
+
+	//heat_level_1  = 400 //Default 360 - Higher is better
+	//heat_level_2  = 440 //Default 400
+	//heat_level_3  = 1000 //Default 1000
+
+	heat_discomfort_level = 310
+	heat_discomfort_strings = list(
+		"Your feathers prickle in the heat.",
+		"You feel uncomfortably warm.",
+		"This heat is miserable.",
+		"You feel like a dog dying in the desert.",
+		"You feel like a desert dogged down with the dead.",
+		"You're dying, like a desert dog."
+	)
+
+	cold_discomfort_level = 292
+	cold_discomfort_strings = list(
+		"You feel soothed by the cool.",
+		"Yes, yes, yes, Fuck yes!",
+		"It's pleasantly cool here."
+	)
+
+	uid            = "bodytype_kepori"
+
+
+//// MARKINGS
+
+/decl/sprite_accessory/marking/kepori
+	name             = "Kepori Beak"
+	icon             = 'mods/species/kepori/icons/markings.dmi'
+	icon_state       = "beak"
+	uid              = "acc_marking_kepori_beak"
+	species_allowed  = list(/decl/species/kepori::uid)
+	color_blend      = ICON_MULTIPLY // TODO: recolor the base icons to work better with multiplicative coloration
+	mask_to_bodypart = TRUE
+	body_parts       = list(
+		BP_HEAD
+	)
+
+/decl/sprite_accessory/marking/kepori/claws
+	name       = "Kepori Claws"
+	icon_state = "claws"
+	uid        = "acc_marking_kepori_claws"
+	body_parts = list(
+		BP_L_HAND,
+		BP_R_HAND
+	)
+
+/decl/sprite_accessory/marking/kepori/feet
+	name       = "Kepori Feet"
+	icon_state = "feet"
+	uid        = "acc_marking_kepori_feet"
+	body_parts = list(
+		BP_L_FOOT,
+		BP_R_FOOT
+	)
