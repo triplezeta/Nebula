@@ -35,4 +35,11 @@
 		/decl/bodytype/kepori
 	)
 
+	available_background_info = list(
+		/decl/background_category/heritage = list(
+			/decl/background_detail/heritage/kepori,
+			/decl/background_detail/heritage/other
+		)
+	)
+
 	butchery_data = /decl/butchery_data/humanoid/kepori

@@ -3,6 +3,8 @@
 // BEGIN INCLUDE
 #include "_kepori.dm"
 #include "_overrides.dm"
+#include "datum/language.dm"
+#include "datum/heritage.dm"
 #include "datum/species.dm"
 #include "datum/species_bodytypes.dm"
 #include "datum/markings.dm"
