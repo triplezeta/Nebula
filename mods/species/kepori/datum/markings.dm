@@ -6,6 +6,7 @@
 	species_allowed  = list(/decl/species/kepori::uid)
 	color_blend      = ICON_MULTIPLY // TODO: recolor the base icons to work better with multiplicative coloration
 	mask_to_bodypart = TRUE
+	is_heritable = TRUE
 	body_parts       = list(
 		BP_HEAD
 	)

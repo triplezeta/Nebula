@@ -9,21 +9,41 @@
 	pixel_offset_x       = -8
 	antaghud_offset_x    = 8
 	limb_blend           = ICON_MULTIPLY
-	//bodytype_flag        = BODY_EQUIP_FLAG_KEPORI
 
 	appearance_flags     = HAS_SKIN_COLOR | HAS_EYE_COLOR
-	base_color           = "#eeeeee"
+	base_color           = "#e8c8a8"
 	base_eye_color       = "#d0600a"
-
-	nail_noun            = "talons"
 
 	default_sprite_accessories = list(
 		SAC_MARKINGS = list(
-			/decl/sprite_accessory/marking/kepori                 = list(SAM_COLOR = COLOR_WHITE),
-			/decl/sprite_accessory/marking/kepori/feet = list(SAM_COLOR = COLOR_WHITE),
-			/decl/sprite_accessory/marking/kepori/claws           = list(SAM_COLOR = COLOR_WHITE)
+			/decl/sprite_accessory/marking/kepori                 = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY),
+			/decl/sprite_accessory/marking/kepori/feet = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY),
+			/decl/sprite_accessory/marking/kepori/claws           = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY)
 		)
 	)
+		//BP_L_FOOT = /obj/item/organ/external/foot/avian,
+		//BP_R_FOOT = /obj/item/organ/external/foot/right/avian,
+		//BP_TAIL   = /obj/item/organ/external/tail/avian
+	nail_noun            = "talons"
+
+	override_limb_types  = list(
+		BP_L_HAND = /obj/item/organ/external/hand/clawed,
+		BP_R_HAND = /obj/item/organ/external/hand/right/clawed,
+		BP_HEAD   = /obj/item/organ/external/head/gripper
+	)
+
+	/*has_organ            = list(
+		BP_STOMACH = /obj/item/organ/internal/stomach,
+		BP_APPENDIX = /obj/item/organ/internal/appendix,
+		BP_HEART   = /obj/item/organ/internal/heart,
+		BP_LUNGS   = /obj/item/organ/internal/lungs,
+		BP_LIVER   = /obj/item/organ/internal/liver,
+		BP_KIDNEYS = /obj/item/organ/internal/kidneys,
+		BP_BRAIN   = /obj/item/organ/internal/brain,
+		BP_EYES    = /obj/item/organ/internal/eyes
+	)*/
+
+	age_descriptor          = /datum/appearance_descriptor/age/kepori
 
 	//cold_level_1  = 260 //Default 260 - Lower is better
 	//cold_level_2  = 200 //Default 200
