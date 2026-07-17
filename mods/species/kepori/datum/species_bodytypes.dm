@@ -38,9 +38,7 @@
 		"Your feathers prickle in the heat.",
 		"You feel uncomfortably warm.",
 		"This heat is miserable.",
-		"You feel like a dog dying in the desert.",
-		"You feel like a desert dogged down with the dead.",
-		"You're dying, like a desert dog."
+		"You feel like a dog dying in the desert."
 	)
 
 	cold_discomfort_level = 292
@@ -51,36 +49,3 @@
 	)
 
 	uid            = "bodytype_kepori"
-
-
-//// MARKINGS
-
-/decl/sprite_accessory/marking/kepori
-	name             = "Kepori Beak"
-	icon             = 'mods/species/kepori/icons/markings.dmi'
-	icon_state       = "beak"
-	uid              = "acc_marking_kepori_beak"
-	species_allowed  = list(/decl/species/kepori::uid)
-	color_blend      = ICON_MULTIPLY // TODO: recolor the base icons to work better with multiplicative coloration
-	mask_to_bodypart = TRUE
-	body_parts       = list(
-		BP_HEAD
-	)
-
-/decl/sprite_accessory/marking/kepori/claws
-	name       = "Kepori Claws"
-	icon_state = "claws"
-	uid        = "acc_marking_kepori_claws"
-	body_parts = list(
-		BP_L_HAND,
-		BP_R_HAND
-	)
-
-/decl/sprite_accessory/marking/kepori/feet
-	name       = "Kepori Feet"
-	icon_state = "feet"
-	uid        = "acc_marking_kepori_feet"
-	body_parts = list(
-		BP_L_FOOT,
-		BP_R_FOOT
-	)
