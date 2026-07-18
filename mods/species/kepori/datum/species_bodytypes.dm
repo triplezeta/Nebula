@@ -17,9 +17,10 @@
 	default_sprite_accessories = list(
 		SAC_MARKINGS = list(
 			/decl/sprite_accessory/marking/kepori                 = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY),
-			/decl/sprite_accessory/marking/kepori/feet = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY),
+			/decl/sprite_accessory/marking/kepori/feet            = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY),
 			/decl/sprite_accessory/marking/kepori/claws           = list(SAM_COLOR = COLOR_DARK_BLUE_GRAY)
-		)
+		),
+		SAC_TAIL = list(/decl/sprite_accessory/tail/kepori        = list(SAM_COLOR = "#e8c8a8"))
 	)
 		//BP_L_FOOT = /obj/item/organ/external/foot/avian,
 		//BP_R_FOOT = /obj/item/organ/external/foot/right/avian,
@@ -29,7 +30,8 @@
 	override_limb_types  = list(
 		BP_L_HAND = /obj/item/organ/external/hand/clawed,
 		BP_R_HAND = /obj/item/organ/external/hand/right/clawed,
-		BP_HEAD   = /obj/item/organ/external/head/gripper
+		BP_HEAD   = /obj/item/organ/external/head/gripper,
+		BP_TAIL   = /obj/item/organ/external/tail/kepori
 	)
 
 	/*has_organ            = list(
@@ -69,3 +71,7 @@
 	)
 
 	uid            = "bodytype_kepori"
+
+/obj/item/organ/external/tail/kepori
+	tail_icon = 'mods/species/kepori/icons/tails.dmi'
+	tail_blend = ICON_MULTIPLY
