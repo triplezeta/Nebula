@@ -75,3 +75,21 @@
 		BP_CHEST,
 		BP_TAIL
 	)
+
+/decl/sprite_accessory/marking/kepori/chestspot
+	name = "Chest Spot"
+	icon_state = "pattern_chest_spot"
+	uid = "acc_marking_kepori_chest_spot"
+	body_parts = list(
+		BP_CHEST,
+		BP_L_ARM,
+		BP_R_ARM
+	)
+
+/decl/sprite_accessory/marking/kepori/cheekspot
+	name = "Cheek Spot"
+	icon_state = "pattern_cheek"
+	uid = "acc_marking_kepori_cheek"
+	body_parts = list(
+		BP_HEAD
+	)
