@@ -62,7 +62,6 @@
 	name = "Feather Pattern (Soap)"
 	icon_state = "pattern_soap"
 	uid = "acc_marking_kepori_feather_soap"
-	layer_blend = ICON_MULTIPLY
 	body_parts = list(
 		BP_HEAD,
 		BP_L_ARM,
