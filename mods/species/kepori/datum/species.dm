@@ -37,8 +37,7 @@
 
 	available_background_info = list(
 		/decl/background_category/heritage = list(
-			/decl/background_detail/heritage/kepori,
-			/decl/background_detail/heritage/other
+			/decl/background_detail/heritage/kepori
 		)
 	)
 

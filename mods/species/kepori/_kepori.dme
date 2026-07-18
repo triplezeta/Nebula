@@ -7,6 +7,7 @@
 #include "datum/heritage.dm"
 #include "datum/species.dm"
 #include "datum/tails.dm"
+#include "datum/hair.dm"
 #include "datum/species_bodytypes.dm"
 #include "datum/markings.dm"
 // END INCLUDE
