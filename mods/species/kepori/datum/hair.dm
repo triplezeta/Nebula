@@ -28,3 +28,29 @@
 	name = "Feather Ponytail"
 	icon_state = "ponytail"
 	uid = "acc_hair_kepori_ponytail"
+
+/decl/sprite_accessory/hair/kepori/onecolor
+	name = "Crested"
+	icon_state = "crested"
+	accessory_metadata_types = list(SAM_COLOR)
+	uid = "acc_hair_kepori_crested"
+
+/decl/sprite_accessory/hair/kepori/onecolor/crowned
+	name = "Cronwed"
+	icon_state = "crowned"
+	uid = "acc_hair_kepori_crowned"
+
+/decl/sprite_accessory/hair/kepori/onecolor/fortunate
+	name = "Fortunate"
+	icon_state = "fortunate"
+	uid = "acc_hair_kepori_fortunate"
+
+/decl/sprite_accessory/hair/kepori/onecolor/spikey
+	name = "Spikey"
+	icon_state = "spikey"
+	uid = "acc_hair_kepori_spikey"
+
+/decl/sprite_accessory/hair/kepori/onecolor/secretary
+	name = "Secretary"
+	icon_state = "secretary"
+	uid = "acc_hair_kepori_secretary"
